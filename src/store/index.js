@@ -4,14 +4,16 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+    state: {
+        navURLListen: '/',
+        count: 1,
+    },
+    getters: {},
+    mutations: {
+        navURLListen(state, path) {
+            state.navURLListen = path
+        }
+    },
+    actions: {},
+    modules: {}
 })

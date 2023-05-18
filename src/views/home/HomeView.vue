@@ -1,26 +1,33 @@
 <template>
-  <div id="app">
-    <v-app>
-      <router-view></router-view>
-    </v-app>
-  </div>
+  <router-view></router-view>
 </template>
 
 <script>
 
 export default {
-  name: 'App',
+  name: "HomeView",
+  components: {},
   data: () => ({
-
   }),
-  computed:{
+  created() {
+
   },
-};
+  mounted() {
+
+  },
+  watch: {},
+  methods: {}
+}
 </script>
-<style>
+<style scoped>
+#app {
+
+}
+
 #app ::-webkit-scrollbar {
   display: none;
 }
+
 #system-bar {
 
 }
